@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Purpose of the Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application serves as a portfolio website (fan site) for Amrin, who is a front-end developer. It showcases her projects, blog posts, resume (about myself), and other relevant information. It provides visitors with an overview of Amrin's skills, experiences, and achievements in the field of technology.
 
-## Available Scripts
+# Contributing
 
-In the project directory, you can run:
+We welcome contributions to enhance and improve this portfolio website. To contribute, please follow these steps:
 
-### `npm start`
+1. Fork the repository to your GitHub account.
+2. Clone the forked repository to your local machine.
+3. Create a new branch for your feature or bug fix.
+4. Make your changes and commit them with descriptive commit messages.
+5. Push your changes to your forked repository.
+6. Create a pull request to merge your changes into the main repository.
+7. Wait for the maintainers to review and approve your pull request.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Feature List
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Header**: Provides navigation links throughout the website.
+- **Hero**: An entry point to the website.
+- **About Me**: Introduces her personal background and skills.
+- **Projects**: Shows part of her GitHub projects.
+- **Project Archive**: Shows all her GitHub projects and provides search bar for filtering.
+- **Blog**: Shows part of her latest technical blog articles.
+- **Blog Archive**: Shows all her technical blog articles and provides search bar for filtering.
+- **Resume**: Presents a detailed resume (about me), including skills, education background, and work history. The resume can be obtained via a download link.
+- **Contact**: Provides her contact information and ways to communicate.
+- **Footer**: Displays copyright and other information at the bottom of the website.
 
-### `npm test`
+# Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine:
 
-### `npm run build`
+   ## `git clone https://github.com/teesien1998/IFN666-Web-Assignment-1.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ## `cd portfolio-website`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the dependencies:
 
-### `npm run eject`
+   ## `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
+   ## `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Application Architecture Description
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The website is a portfolio platform built using React, a JavaScript library known for its efficient component-based architecture. It employs React functional components and hooks for managing state and side effects, enhancing the site's reactivity and performance.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+For site navigation, React Router is used to facilitate seamless transitions between different pages. Styling is handled with Tailwind CSS, which provides utility-first classes that speed up the development process. The data for projects and blog posts are dynamically sourced from external APIs, including GitHub for projects and dev.to for blog content. This architecture not only ensures a modular and scalable application but also leverages modern web technologies for a robust user experience.
 
-## Learn More
+# Issue Reporting
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you are encountering any issues, please follow the steps below to report issues:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Visit the Repository**: Go to the project's GitHub page.
+2. **Check for Similar Issues**: Look for any reports that might already address your problem to avoid duplicates.
+3. **Choose the Right Issue Type**: Select the template that matches your issue (like Bug Report or Feature Request) to help organize the process.
+4. **Provide Detailed Information**:
+   - **Describe the Problem**: Explain what went wrong and how it differed from what you expected.
+   - **Steps to Reproduce**: List the steps that lead to the problem, if possible.
+   - **Environment Info**: Share details about your browser, operating system, and any relevant technology or versions.
+   - **Include Screenshots or Logs**: Attach any visuals or error logs that might clarify the issue.
+5. **Submit the Issue**: Once you've provided all the details, submit the issue.
+6. **Follow Up**: Keep track of the issue's status and participate in discussions to help resolve it.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By following these steps, you'll help the development team understand and address your issue more effectively.

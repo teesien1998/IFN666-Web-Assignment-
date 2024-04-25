@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Madimi+One&family=Platypi:ital,wght@0,728;1,728&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  @apply text-lg;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.projects img {
+  width: 100%;
+}
+
+/* color */
+/* @keyframes colorChange {
+  0% {
+    background: #aeaff4; 
   }
+  100% {
+    background: #bbbdc1; 
+  }
+} */
+
+/* .bg-secondery {
+  background: #1e293b;
+} */
+
+.bg-accent {
+  background: rgb(249 115 22);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bg--custom {
+  background-color: #ebf7ef;
+}
+
+.text--accent {
+  color: rgb(249 115 22);
+}
+
+.border--h2 {
+  border-color: rgb(249 115 22);
+}
+
+nav li a {
+  @apply mx-6 mt-6 text-lg;
+}
+
+nav li a:hover {
+  color: rgb(249 115 22);
+}
+
+.mobile-nav {
+  @apply block md:hidden fixed top-10 py-2 w-full h-full bg-white duration-500;
+}
+
+/* hero */
+h1,
+h2 {
+  /* font-family: "Pacifico"; */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600 !important;
+  font-style: normal;
+  line-height: 1.5 !important;
+  padding: 0 !important;
+}
+
+.font--ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*header*/
+.font--header {
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font--caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px !important;
+}
+
+.font-madimi {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+
+header {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.box--shadowheader {
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.15);
+}
+
+.box--shadowblog {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box--shadowblog:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* nav {
+  margin: auto;
+} */
+
+.icon--logo {
+  width: 30px;
+  height: 30px;
+}
+
+.btn--transition {
   color: white;
+  background-color: rgb(249 115 22);
+  transition: background-color 300ms;
 }
 
-.App-link {
-  color: #61dafb;
+.btn--transition:hover {
+  background-color: rgb(251 146 60);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn--facebook:hover {
+  color: #1877f2;
+  transition: 0.3s;
+}
+
+.btn--youtube:hover {
+  color: #ff0000;
+  transition: 0.3s;
+}
+
+.btn--twitter:hover {
+  color: #1da1f2;
+  transition: 0.3s;
+}
+
+.btn--github:hover {
+  color: #333333;
+  transition: 0.3s;
+}
+
+/* footer */
+.ul-footer {
+  margin-right: 15px !important;
+  margin-left: 0 !important;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
