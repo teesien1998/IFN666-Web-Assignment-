@@ -6,6 +6,7 @@ import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 
 function Home() {
+  document.title = "SLPortfolio | Home";
   return (
     <>
       <Hero />

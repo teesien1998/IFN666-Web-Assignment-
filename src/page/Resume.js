@@ -3,6 +3,7 @@ import { FaGoogleDrive } from "react-icons/fa";
 
 // Resume Component
 function Resume() {
+  document.title = "SLPortfolio | Resume";
   return (
     <div>
       <section className="px-5 py-36 bg-gradient-to-b from-indigo-100 via-sky-100 to-emerald-100 text-center ">

@@ -5,8 +5,8 @@ function BlogArchive() {
   const [refBlogs, setRefBlogs] = useState([]); // Reference array for all blogs fetched
   const [displayedBlogs, setDisplayedBlogs] = useState([]); // Array for blogs to be displayed after filtering
   const [search, setSearch] = useState(""); // State for the search input value
-
   const API_KEY = process.env.REACT_APP_API_KEY;
+  document.title = "SLPortfolio | Blogs";
 
   useEffect(() => {
     const fetchBlogs = async () => {

@@ -7,6 +7,7 @@ function ProjectsArchive() {
   const [refProjects, setRefProjects] = useState([]); // Reference array for all projects fetched
   const [displayedProjects, setDisplayedProjects] = useState([]); // Array for projects to be displayed after filtering
   const [search, setSearch] = useState(""); // State for the search input value
+  document.title = "SLPortfolio | Projects";
 
   useEffect(() => {
     const fetchProjects = async () => {

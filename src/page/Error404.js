@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FaGoogleDrive } from "react-icons/fa";
 
+// Error 404 Component
 function Error() {
+  document.title = "SLPortfolio | 404 Error";
   return (
     <section className="px-5 py-36 bg-gradient-to-b from-indigo-100 via-sky-100 to-emerald-100 text-center ">
       <div className="container mx-auto items-center justify-center md:justify-between py-48">

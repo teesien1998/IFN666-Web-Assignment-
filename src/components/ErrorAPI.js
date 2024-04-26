@@ -1,6 +1,7 @@
 // ErrorMessage.js
 import React from "react";
 
+// Error API Component
 const ErrorMessage = ({ message, title }) => {
   return (
     <div className="container mx-auto ">
